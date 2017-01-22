@@ -1,4 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+<a routerLink="index">Index</a>
+<a routerLink="team">Team</a>
+<a routerLink="about">About</a>
+<a routerLink="contacts">Contacts</a>
 <router-outlet></router-outlet>
+<input type="text" [(ngModel)]="text" />
+inputed text = {{ text }}

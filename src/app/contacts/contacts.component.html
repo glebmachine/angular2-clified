@@ -1,0 +1,22 @@
+<h2>{{ title }}</h2>
+
+<form [formGroup]="model"  (ngSubmit)="onSubmit()">
+
+  <label>
+    Name
+    <input type="text" formControlName="name" required/>
+    <div class="error" *ngIf="modelErrors.name">
+      {{ modelErrors.name }}
+    </div>
+  </label>
+
+  <br />
+
+  <label>
+    Lastname
+    <input type="text" formControlName="lastname" />
+    <div class="error" *ngIf="modelErrors.lastname">
+      {{ modelErrors.lastname }}
+    </div>
+  </label>
+</form>
